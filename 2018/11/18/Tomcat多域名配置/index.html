@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="原文https://blog.csdn.net/Hoshea_chx/article/details/78826689github下载慢问题http://www.cnblogs.com/knuzy/p/9415243.htmlhexo根配置git参考https://blog.csdn.net/shouldnotappearcalm/article/details/79185982凭证问题https">
+<meta name="description" content="修改tomcat的conf目录下server.xml  多域名配置如下：   &amp;lt;Host name=&amp;quot;www.xxx.com&amp;quot;  appBase=&amp;quot;webapps&amp;quot;        unpackWARs=&amp;quot;true&amp;quot; autoDeploy=&amp;quot;true&amp;quot;&amp;gt;    &amp;lt;Context path=&amp;quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+GitHub搭建博客（Window上的实践及总结）">
-<meta property="og:url" content="http://yoursite.com/2018/11/18/postName/index.html">
+<meta property="og:title" content="Tomcat多域名配置">
+<meta property="og:url" content="http://yoursite.com/2018/11/18/Tomcat多域名配置/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="原文https://blog.csdn.net/Hoshea_chx/article/details/78826689github下载慢问题http://www.cnblogs.com/knuzy/p/9415243.htmlhexo根配置git参考https://blog.csdn.net/shouldnotappearcalm/article/details/79185982凭证问题https">
+<meta property="og:description" content="修改tomcat的conf目录下server.xml  多域名配置如下：   &amp;lt;Host name=&amp;quot;www.xxx.com&amp;quot;  appBase=&amp;quot;webapps&amp;quot;        unpackWARs=&amp;quot;true&amp;quot; autoDeploy=&amp;quot;true&amp;quot;&amp;gt;    &amp;lt;Context path=&amp;quot;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-18T06:27:45.718Z">
+<meta property="og:updated_time" content="2018-11-18T06:36:56.104Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+GitHub搭建博客（Window上的实践及总结）">
-<meta name="twitter:description" content="原文https://blog.csdn.net/Hoshea_chx/article/details/78826689github下载慢问题http://www.cnblogs.com/knuzy/p/9415243.htmlhexo根配置git参考https://blog.csdn.net/shouldnotappearcalm/article/details/79185982凭证问题https">
+<meta name="twitter:title" content="Tomcat多域名配置">
+<meta name="twitter:description" content="修改tomcat的conf目录下server.xml  多域名配置如下：   &amp;lt;Host name=&amp;quot;www.xxx.com&amp;quot;  appBase=&amp;quot;webapps&amp;quot;        unpackWARs=&amp;quot;true&amp;quot; autoDeploy=&amp;quot;true&amp;quot;&amp;gt;    &amp;lt;Context path=&amp;quot;">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/18/postName/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/18/Tomcat多域名配置/">
 
 
 
 
 
-  <title>Hexo+GitHub搭建博客（Window上的实践及总结） | Hexo</title>
+  <title>Tomcat多域名配置 | Hexo</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/18/postName/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/18/Tomcat多域名配置/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo+GitHub搭建博客（Window上的实践及总结）</h1>
+          <h1 class="post-title" itemprop="name headline">Tomcat多域名配置</h1>
         
 
         <div class="post-meta">
@@ -261,7 +261,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-18T14:16:31+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-18T14:34:41+08:00">
                 2018-11-18
               </time>
             
@@ -299,8 +299,20 @@
       
 
       
-        <p>原文<br><a href="https://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">https://blog.csdn.net/Hoshea_chx/article/details/78826689</a><br>github下载慢问题<br><a href="http://www.cnblogs.com/knuzy/p/9415243.html" target="_blank" rel="noopener">http://www.cnblogs.com/knuzy/p/9415243.html</a><br>hexo根配置git参考<br><a href="https://blog.csdn.net/shouldnotappearcalm/article/details/79185982" target="_blank" rel="noopener">https://blog.csdn.net/shouldnotappearcalm/article/details/79185982</a><br>凭证问题<br><a href="https://blog.csdn.net/m0_37806112/article/details/79922095" target="_blank" rel="noopener">https://blog.csdn.net/m0_37806112/article/details/79922095</a></p>
+        <pre><code> 修改tomcat的conf目录下server.xml
+ 多域名配置如下：
 
+ &lt;Host name=&quot;www.xxx.com&quot;  appBase=&quot;webapps&quot;
+       unpackWARs=&quot;true&quot; autoDeploy=&quot;true&quot;&gt;
+   &lt;Context path=&quot;&quot; docBase=&quot;yiban&quot; /&gt;
+ &lt;/Host&gt;
+
+&lt;Host name=&quot;ww.yyy.com&quot;  appBase=&quot;webapps&quot;
+       unpackWARs=&quot;true&quot; autoDeploy=&quot;true&quot;&gt;
+    &lt;Context path=&quot;&quot; docBase=&quot;dist&quot;&gt;
+  &lt;/Context&gt;
+ &lt;/Host&gt;
+</code></pre>
       
     </div>
     
@@ -324,8 +336,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/17/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/11/18/postName/" rel="next" title="Hexo+GitHub搭建博客（Window上的实践及总结）">
+                <i class="fa fa-chevron-left"></i> Hexo+GitHub搭建博客（Window上的实践及总结）
               </a>
             
           </div>
@@ -333,10 +345,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/18/Tomcat多域名配置/" rel="prev" title="Tomcat多域名配置">
-                Tomcat多域名配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
